@@ -1,0 +1,116 @@
+body {
+  background-color: #242424;
+  color: #ffdb58;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  flex: 40%;
+  right: 0;
+  text-align: center;
+  padding: 2% 10%;
+  margin: 0;
+}
+
+main {
+  flex: 60%;
+  text-align: center;
+  padding: 2% 10%;
+  justify-content: center;
+  margin: 0;
+}
+
+main p,
+img,
+h3 {
+  max-width: 100%;
+}
+
+aside h3,
+button {
+  max-width: 100%;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.vertical {
+  border-left: 1px solid rgb(80, 80, 80);
+  height: 90%;
+  position: absolute;
+  left: 60%;
+  top: 5%;
+}
+
+.heading {
+  font-size: xx-large;
+}
+
+.btn,
+.show-answer-btn {
+  font-size: large;
+  background-color: #242424;
+  color: #ffdb58;
+  border: 1px solid #ffdb58;
+  border-radius: 12px;
+  height: 50px;
+  position: relative;
+  width: 100%;
+  min-width: 70%;
+  margin: 10% 0;
+  display: block;
+  padding: 2% 1%;
+}
+
+.btn:hover {
+  background-color: cadetblue;
+  color: #242424;
+  border: 1px solid #242424;
+}
+
+.content {
+  max-width: 100%;
+  background-color: rgb(53, 49, 44);
+  padding: 5%;
+  border-radius: 15px 50px 30px 5px;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+}
+
+.quote {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.author,
+.riddle-answer {
+  font-style: italic;
+  color: cadetblue;
+  text-decoration: underline;
+}
+
+::selection {
+  color: cadetblue;
+}
+
+@media screen and (max-width: 768px) {
+  /* Add responsive styles for smaller screens */
+  main {
+    padding: 2% 2%;
+  }
+  aside {
+    text-align: center;
+    padding: 2% 5%;
+  }
+  .vertical {
+    display: none;
+  }
+}
